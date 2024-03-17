@@ -40,7 +40,7 @@ var sphere2 = document.getElementById("sphere2");
 
 if (window.DeviceMotionEvent != undefined) {
  window.ondevicemotion = function(e) {
-  ax1 = event.accelerationExcludingGravity.z;
+  ax1 = event.acceleration.z;
   var ax2 = 0;
   if(ax2!=ax1)
   {
