@@ -41,9 +41,15 @@ var sphere2 = document.getElementById("sphere2");
 if (window.DeviceMotionEvent != undefined) {
  window.ondevicemotion = function(e) {
   ax1 = event.accelerationIncludingGravity.x * 5;
-  console.log(ax1);
+  var ax2 = 0;
+  if(ax2!=ax1)
+  {
+   ax2=ax1;
+   console.log(ax2);
+  }
+ 
+  
   ay1 = event.accelerationIncludingGravity.y * 5;
-  console.log(ay1);
  }
  setInterval( function() {
   var landscapeOrientation = window.innerWidth/window.innerHeight > 1;
